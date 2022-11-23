@@ -86,6 +86,7 @@ namespace AppCompras.View
             {
                 List<Produto> temp = await App.Database.Search(busca);
 
+                lista_produtos.Clear();
                 foreach (Produto item in temp)
                 {
                     lista_produtos.Add(item);
